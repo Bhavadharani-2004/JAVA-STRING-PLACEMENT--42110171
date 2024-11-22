@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String [] args)
+    {
+        Scanner scanner=new Scanner (System.in);
+        System.out.println("Enter the a:");
+       int a =scanner.nextInt();
+       System.out.println(" Enter the b:");
+       int b =scanner.nextInt();
+       a=a+b;
+       b=a-b;
+       a=a-b;
+       
+           System.out.println(" after swapping: a = " + a + " , b = "+ b);
+    }
+}
+
+output : 
+Enter the a:
+5
+ Enter the b:
+2
+ after swapping: a = 2 , b = 5
