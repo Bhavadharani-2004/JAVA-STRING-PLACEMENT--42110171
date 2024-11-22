@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String [] args)
+    {
+        Scanner scanner=new Scanner (System.in);
+        System.out.println("Enter the String:");
+        String input=scanner.nextLine();
+        System.out.println("enter the cahracter to add:");
+        char ch= scanner.next().charAt(0);
+    System.out.println("Enter the position of the string:");
+    int position=scanner.nextInt();
+    
+        String result= input.substring(0,position)+ch+input.substring(position);
+    System.out.println("The modified string is : " + result);
+    }
+}
+output:
+Enter the String:
+hello
+enter the cahracter to add:
+!
+Enter the position of the string:
+5
+The modified string is : hello!
