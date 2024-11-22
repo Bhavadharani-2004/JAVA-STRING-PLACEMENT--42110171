@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String [] args)
+    {
+        Scanner scanner=new Scanner (System.in);
+        System.out.println("Enter the Main String :");
+        String mainstring=scanner.nextLine();
+       System.out.println("Enter the sub String :");
+       String insertstring=scanner.nextLine();
+       System.out.println("Enter the position of the String:");
+       int position =scanner.nextInt();
+       String result=mainstring.substring(0,position)+insertstring+mainstring.substring(position);
+       System.out.println("Result string : " + result);
+    }
+}
+output:
+Enter the Main String :
+hello wold
+Enter the sub String :
+r
+Enter the position of the String:
+8
+Result string : hello world
