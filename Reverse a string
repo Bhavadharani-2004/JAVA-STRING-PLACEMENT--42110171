@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Main
+{
+    public static void main(String [] args)
+    {
+        Scanner scanner=new Scanner (System.in);
+        System.out.println("Enter the String:");
+        String input=scanner.nextLine();
+        String reversed= new StringBuilder(input).reverse().toString();
+    System.out.println("the Reversed String is : " + reversed);
+    }
+}
+output:
+Enter the String:
+hello 
+the Reversed String is :  olleh
